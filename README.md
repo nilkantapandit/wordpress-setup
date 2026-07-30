@@ -21,32 +21,45 @@ Perfect for spinning up local development environments, staging servers, or base
 
 ## 🚀 Usage
 
-**1. Clone the repository or download the script:**
+1. Clone the repository or download the script:
+
 ```bash
 git clone https://github.com/nilkantapandit/wordpress-setup.git
 cd wordpress-setup
+```
 
-**2. Make the script executable:**
+2. Make the script executable:
+
 ```bash
 chmod +x setup.sh
+```
 
-**3. Run the script with sudo privileges:**
+3. Run the script with sudo privileges:
+
 ```bash
 sudo ./setup.sh
+```
 
-**4. Follow the interactive prompts:**
-The script will ask you to define
-Your Domain Name (e.g., local.dev or yourdomain.com)
-A new MySQL Database Name
-A new MySQL Database User
-A strong MySQL Password
-Once completed, navigate to https://yourdomain.com in your web browser to finalize the famous 5-minute WordPress web installation!
+4. Follow the interactive prompts:
 
-🔒 Security Notes
-Self-Signed SSL: This script generates a self-signed certificate. Your browser will show a "Not Secure" warning on the first visit. This is completely normal for self-signed local certs. You can safely bypass this in your browser to access the site. (For live production, consider replacing the self-signed cert with Certbot/Let's Encrypt).
+The script will ask you for:
 
-MySQL Root Access: The script strictly deletes the root user for any host other than localhost or 127.0.0.1 to prevent unauthorized remote database access.
+- Your Domain Name (e.g. `local.dev` or `yourdomain.com`)
+- A new MySQL Database Name
+- A new MySQL Database User
+- A strong MySQL Password
 
-📄 License
-This project is open-source and available under the MIT License.
+Once completed, navigate to:
 
+`https://yourdomain.com`
+
+to finalize the WordPress installation.
+
+## 🔒 Security Notes
+
+- **Self-Signed SSL:** This script generates a self-signed certificate. Your browser will show a "Not Secure" warning on the first visit.
+- **MySQL Root Access:** The script removes remote root access and restricts the root account to localhost.
+
+## 📄 License
+
+This project is licensed under the MIT License.
