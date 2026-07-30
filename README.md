@@ -23,5 +23,5 @@ Perfect for spinning up local development environments, staging servers, or base
 
 **1. Clone the repository or download the script:**
 ```bash
-git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
-cd YOUR-REPO-NAME
+git clone https://github.com/nilkantapandit/wordpress-setup.git
+cd wordpress-setup
